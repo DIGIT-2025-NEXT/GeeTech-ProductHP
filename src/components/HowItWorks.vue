@@ -16,7 +16,6 @@
             <h3 class="step-title">{{ step.title }}</h3>
             <p class="step-description">{{ step.description }}</p>
           </div>
-          <div v-if="index < steps.length - 1" class="step-connector"></div>
         </div>
       </div>
       <div class="user-types">
@@ -24,13 +23,13 @@
           <h3 class="user-type-title">スタートアップ向け</h3>
           <ul class="user-type-list">
             <li>プロジェクトの無料掲載</li>
-            <li>人材のスキルマッチング</li>
+            <li>学生人材のスキルマッチング</li>
             <li>柔軟な契約形態</li>
             <li>成果に応じた報酬設定</li>
           </ul>
         </div>
         <div class="user-type">
-          <h3 class="user-type-title">人材向け</h3>
+          <h3 class="user-type-title">学生向け</h3>
           <ul class="user-type-list">
             <li>実践的な経験獲得</li>
             <li>地元での働く機会</li>
@@ -51,12 +50,12 @@ export default {
       steps: [
         {
           title: 'プロジェクト掲載',
-          description: 'スタートアップが必要な人材やプロジェクトを掲載します。詳細な要件と条件を明記できます。',
+          description: 'スタートアップが必要な学生人材やプロジェクトを掲載します。詳細な要件と条件を明記できます。',
           icon: 'PostIcon'
         },
         {
           title: 'マッチング',
-          description: '興味のある人材がプロジェクトに応募。スキルと要件を照合して最適なマッチングを行います。',
+          description: '興味のある学生人材がプロジェクトに応募。スキルと要件を照合して最適なマッチングを行います。',
           icon: 'MatchIcon'
         },
         {
@@ -185,27 +184,6 @@ export default {
   color: #666;
 }
 
-.step-connector {
-  position: absolute;
-  top: 20px;
-  left: calc(100% + 10px);
-  width: 40px;
-  height: 2px;
-  background: linear-gradient(to right, #111, rgba(17, 17, 17, 0.3));
-  z-index: 1;
-}
-
-.step-connector::after {
-  content: '';
-  position: absolute;
-  right: -4px;
-  top: -2px;
-  width: 0;
-  height: 0;
-  border-top: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  border-left: 6px solid rgba(17, 17, 17, 0.6);
-}
 
 .user-types {
   display: grid;
@@ -266,9 +244,6 @@ export default {
     gap: 40px;
   }
   
-  .step-connector {
-    display: none;
-  }
   
   .user-types {
     grid-template-columns: 1fr;

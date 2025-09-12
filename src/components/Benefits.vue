@@ -15,11 +15,6 @@
             <h3 class="benefit-title">{{ benefit.title }}</h3>
             <p class="benefit-description">{{ benefit.description }}</p>
           </div>
-          <div v-if="index < benefits.length - 1" class="flow-arrow">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M7 17l5-5-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
         </div>
       </div>
       <div class="impact-stats">
@@ -197,14 +192,6 @@ export default {
   color: #666;
 }
 
-.flow-arrow {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%) rotate(90deg);
-  color: #111;
-  opacity: 0.3;
-}
 
 .impact-stats {
   display: grid;
@@ -278,11 +265,6 @@ export default {
     font-size: 14px;
   }
   
-  .flow-arrow {
-    position: static;
-    transform: none;
-    margin: 20px 0;
-  }
   
   .impact-stats {
     grid-template-columns: 1fr;
