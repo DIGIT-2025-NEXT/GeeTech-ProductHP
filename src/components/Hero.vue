@@ -13,19 +13,19 @@
             新しい働き方で、共に未来を築きませんか？
           </p>
           <div class="hero-buttons">
-            <button class="primary-button">
+            <a href="https://geetech.dokkiitech.dev/" target="_blank" rel="noopener noreferrer" class="primary-button">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                 <path d="M13 7l5 5-5 5M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               今すぐ始める
-            </button>
-            <button class="secondary-button">
+            </a>
+            <a href="#features" class="secondary-button">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
                 <polygon points="10,8 16,12 10,16" fill="currentColor"/>
               </svg>
               詳しく見る
-            </button>
+            </a>
           </div>
         </div>
         <div class="hero-visual">
@@ -233,11 +233,11 @@ export default {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 140px 0 100px;
+    padding: 120px 0 80px;
   }
   
   .hero-title {
-    font-size: 36px;
+    font-size: 32px;
   }
   
   .hero-description {
@@ -254,6 +254,42 @@ export default {
     width: 100%;
     max-width: 300px;
     justify-content: center;
+  }
+  
+  .visual-container {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+  
+  .hero-title {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+  
+  .hero-description {
+    font-size: 15px;
+  }
+  
+  .primary-button,
+  .secondary-button {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+  
+  .visual-container {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .card {
+    padding: 24px;
+    min-width: 120px;
   }
 }
 </style>

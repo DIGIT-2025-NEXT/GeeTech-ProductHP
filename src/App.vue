@@ -31,6 +31,11 @@ export default {
 </script>
 
 <style>
+:root {
+  --audiowide: 'Audiowide', cursive;
+  --inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +47,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: var(--inter);
   line-height: 1.6;
   color: #111;
   background: #fff;

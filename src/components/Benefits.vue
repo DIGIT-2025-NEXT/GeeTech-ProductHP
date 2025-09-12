@@ -32,7 +32,7 @@
           <div class="stat-label">地域密着型</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">0¥</div>
+          <div class="stat-number">¥0</div>
           <div class="stat-label">初期費用</div>
         </div>
       </div>
@@ -265,6 +265,19 @@ export default {
     padding: 24px;
   }
   
+  .benefit-icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .benefit-title {
+    font-size: 18px;
+  }
+  
+  .benefit-description {
+    font-size: 14px;
+  }
+  
   .flow-arrow {
     position: static;
     transform: none;
@@ -278,6 +291,58 @@ export default {
   
   .stat-number {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits {
+    padding: 60px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 60px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .section-description {
+    font-size: 15px;
+  }
+  
+  .benefits-flow {
+    margin-bottom: 60px;
+  }
+  
+  .benefit-item {
+    gap: 16px;
+    padding: 20px 16px;
+  }
+  
+  .benefit-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .benefit-title {
+    font-size: 17px;
+  }
+  
+  .benefit-description {
+    font-size: 13px;
+  }
+  
+  .stat-item {
+    padding: 24px 16px;
+  }
+  
+  .stat-number {
+    font-size: 32px;
+  }
+  
+  .stat-label {
+    font-size: 13px;
   }
 }
 </style>

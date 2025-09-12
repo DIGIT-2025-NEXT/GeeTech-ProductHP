@@ -9,20 +9,20 @@
             共に成長し、地域を活性化させましょう。
           </p>
           <div class="cta-buttons">
-            <button class="primary-button">
+            <a href="https://geetech.dokkiitech.dev/company/register" target="_blank" rel="noopener noreferrer" class="primary-button">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                 <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="currentColor" stroke-width="2"/>
                 <rect x="8" y="2" width="8" height="4" rx="1" ry="1" stroke="currentColor" stroke-width="2"/>
               </svg>
               スタートアップとして参加
-            </button>
-            <button class="secondary-button">
+            </a>
+            <a href="https://geetech.dokkiitech.dev/login" target="_blank" rel="noopener noreferrer" class="secondary-button">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
               </svg>
               人材として参加
-            </button>
+            </a>
           </div>
         </div>
         <div class="cta-visual">
@@ -60,11 +60,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <rect width="32" height="32" rx="8" fill="#111"/>
-              <path d="M8 12h16v2H8v-2zm0 4h16v2H8v-2zm0 4h10v2H8v-2z" fill="#fff"/>
-            </svg>
-            <span>KITAQstartup</span>
+            <span>kitaq_startup</span>
           </div>
           <div class="footer-text">
             <p>&copy; 2025 DIGITKITAQ | GeeTech</p>
@@ -266,8 +262,10 @@ export default {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-weight: 600;
+  font-family: var(--audiowide);
+  font-weight: 400;
   font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 .footer-text {
@@ -300,6 +298,10 @@ export default {
     font-size: 28px;
   }
   
+  .cta-description {
+    font-size: 16px;
+  }
+  
   .cta-buttons {
     align-items: center;
   }
@@ -313,6 +315,46 @@ export default {
   .visual-container {
     width: 250px;
     height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 60px 0 0;
+  }
+  
+  .cta-content {
+    gap: 50px;
+  }
+  
+  .cta-title {
+    font-size: 24px;
+  }
+  
+  .cta-description {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+  
+  .primary-button,
+  .secondary-button {
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+  
+  .visual-container {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .orbit-node {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .center-node {
+    width: 50px;
+    height: 50px;
   }
 }
 </style>

@@ -102,13 +102,15 @@ export default {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .feature-card {
   text-align: center;
-  padding: 40px 24px;
+  padding: 32px 20px;
   border-radius: 16px;
   background: #fff;
   border: 1px solid rgba(17, 17, 17, 0.08);
@@ -171,6 +173,13 @@ export default {
   color: #666;
 }
 
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
 @media (max-width: 768px) {
   .features {
     padding: 80px 0;
@@ -191,6 +200,46 @@ export default {
   
   .feature-card {
     padding: 32px 20px;
+  }
+  
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features {
+    padding: 60px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 60px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .section-description {
+    font-size: 15px;
+  }
+  
+  .feature-card {
+    padding: 24px 16px;
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .feature-title {
+    font-size: 18px;
+  }
+  
+  .feature-description {
+    font-size: 14px;
   }
 }
 </style>

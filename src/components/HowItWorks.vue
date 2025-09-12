@@ -289,6 +289,23 @@ export default {
     font-size: 16px;
   }
   
+  .steps {
+    margin-bottom: 80px;
+  }
+  
+  .step-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .step-title {
+    font-size: 18px;
+  }
+  
+  .step-description {
+    font-size: 14px;
+  }
+  
   .user-types {
     grid-template-columns: 1fr;
     max-width: none;
@@ -296,6 +313,71 @@ export default {
   
   .user-type {
     padding: 32px 24px;
+  }
+  
+  .user-type-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works {
+    padding: 60px 0;
+  }
+  
+  .section-header {
+    margin-bottom: 60px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .section-description {
+    font-size: 15px;
+  }
+  
+  .steps {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+  
+  .step-number {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .step-icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .step-title {
+    font-size: 17px;
+  }
+  
+  .step-description {
+    font-size: 13px;
+  }
+  
+  .user-types {
+    gap: 32px;
+  }
+  
+  .user-type {
+    padding: 24px 20px;
+  }
+  
+  .user-type-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .user-type-list li {
+    font-size: 14px;
+    padding: 10px 0;
   }
 }
 </style>
