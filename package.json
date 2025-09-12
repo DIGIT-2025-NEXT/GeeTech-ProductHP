@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "dev": "npm run serve -p 3008",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite",
     "start": "serve -s dist -l 3008 --no-clipboard"
   },
   "dependencies": {
@@ -13,8 +14,8 @@
     "vue": "^3.2.13"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.0.0",
     "serve": "^14.2.5"
   }
 }
