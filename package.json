@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "dev": "npm run serve",
+    "dev": "npm run serve -p 3008",
     "start": "serve -s dist -l 3008 --no-clipboard"
   },
   "dependencies": {
