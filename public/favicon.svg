@@ -1,0 +1,26 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern gradient background -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#333"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="32" height="32" rx="6" fill="url(#bg)"/>
+  
+  <!-- Clean, modern K -->
+  <g fill="white">
+    <!-- Vertical line -->
+    <rect x="10" y="8" width="2.5" height="16"/>
+    
+    <!-- Upper arm - embedded in vertical line -->
+    <path d="M10 15 L22 8 L24 10 L12.5 16.5 Z" fill="white"/>
+    
+    <!-- Lower arm - embedded in vertical line -->  
+    <path d="M10 17 L22 24 L24 22 L12.5 15.5 Z" fill="white"/>
+  </g>
+  
+  <!-- Subtle red accent -->
+  <rect x="22" y="6" width="4" height="2" rx="1" fill="#ff3333" opacity="0.8"/>
+</svg>
